@@ -3,6 +3,26 @@
 SSHpass offers you the ability to automatically offer a password via SSH when
 you are prompted for it.
 
+# Using (composer.json) 
+```
+"require": {
+        "lpkapil/sshpass": "1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "lpkapil/sshpass",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/lpkapil/sshpass.git",
+                    "type": "git",
+                    "reference": "main"
+                }
+            }
+        }
+    ]
+```
 ## Install
 
 ```bash
@@ -12,7 +32,7 @@ cd sshpass
 make && make install
 ```
 
-## Notes
+## Notes 
 
 This repository is a mirror of https://sourceforge.net/projects/sshpass/
 
